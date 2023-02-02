@@ -5,11 +5,11 @@ const NotFound = () => {
 
 
   return(
-  <>
-  <div class="NotFound">
-    <h1> 404 Not Found</h1>
-  </div>
-  </>
+    <>
+    <div class="NotFound">
+      <h1> 404 Not Found</h1>
+    </div>
+    </>
   )
 }
 

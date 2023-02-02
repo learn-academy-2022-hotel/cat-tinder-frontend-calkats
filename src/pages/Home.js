@@ -7,7 +7,7 @@ const Home = () => {
   return(
   <>
 
-    <h1>Where the wildcats are found</h1>
+    <h3>Where the wildcats are found</h3>
 
   
   </>
