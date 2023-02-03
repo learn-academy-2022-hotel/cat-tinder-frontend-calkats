@@ -1,15 +1,12 @@
 import React from 'react'
 
-
 const Home = () => {
-
-
   return(
   <>
-
-    <h3>Where the wildcats are found</h3>
-
-  
+    <div className='home-text'>
+    <h3>Welcome fluff balls!!</h3>
+      <h3>Home</h3>
+    </div>
   </>
   )
 }

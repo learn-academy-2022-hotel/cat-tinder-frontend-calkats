@@ -18,7 +18,6 @@ const App = () => {
   return(
     <>
       <Header />
-      <h1>Welcome Tail Wagger!!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/wildcatedit" element={<WildcatEdit />} />
