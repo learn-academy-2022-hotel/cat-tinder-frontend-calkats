@@ -6,7 +6,9 @@ const Header = () => {
 
   return(
   <>
-  <h1> Claw Tinder </h1>
+    <div className='page-title'>
+      <h1> Claw Tinder </h1>
+    </div>
   </>
   )
 }

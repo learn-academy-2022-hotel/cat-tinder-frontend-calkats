@@ -6,7 +6,7 @@ const Footer = () => {
 
   return(
   <>
-    <p> &copy; Created by Natally, Chistian and Bora || Hotel 2023 </p>
+    <p> &copy; Created by Natally, Christian and Bora || Hotel 2023 </p>
   </>
   )
 }
