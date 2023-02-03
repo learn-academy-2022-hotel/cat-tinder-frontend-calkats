@@ -20,8 +20,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/wildcatindex" element={<WildcatIndex wildcats={wildcats} />} />
         <Route path="/wildcatedit" element={<WildcatEdit />} />
-        <Route path="/wildcatindex" element={<WildcatIndex />} />
         <Route path="/wildcatnew" element={<WildcatNew />} />
        <Route path="/wildcatshow" element={<WildcatShow />} />
        <Route path="*" element={<NotFound />} />
