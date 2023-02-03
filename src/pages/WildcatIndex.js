@@ -1,19 +1,18 @@
 import React from 'react'
 import { Card, CardText, CardBody, Button,
-  CardTitle, CardSubtitle } from 'reactstrap';
+CardTitle, CardSubtitle } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 const WildcatIndex = ({ wildcats }) => {
 
   return(
   <main>
-    {wildcats.map((wildcat, index) =>{
+    {wildcats?.map((wildcat, index) =>{
       return(
-        <Card
-  color="dark"
-  style={{
-    width: '18rem'
-  }}
-key={index}>
+<Card
+      color="dark"
+      style={{width: '18rem', height:'26rem'}}
+      key={index}>
   <img
     alt="Cat Pictures"
     src={wildcat.image}
@@ -22,27 +21,24 @@ key={index}>
     <CardTitle tag="h5">
       {wildcat.name}
     </CardTitle>
-    <CardSubtitle
+      <CardSubtitle
       className="mb-2 text-muted"
       tag="h6"
-    >
+      >
       Age {wildcat.age}
-    </CardSubtitle>
+      </CardSubtitle>
     <CardText>
       enjoys: {wildcat.enjoys}
       < br />
       Dislikes: {wildcat.dislikes}
     </CardText>
-    <Button>
+    <NavLink to={`/wildcatshow/${wildcat.id}`} class-name="nav-link"> 
      More About Me
-    </Button>
+    </NavLink>
   </CardBody>
 </Card>
       )
     })}
-
-
-
   </main>
   )
 }

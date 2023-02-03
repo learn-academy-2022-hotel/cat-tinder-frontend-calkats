@@ -3,7 +3,7 @@ body {
   color: white;
   padding: 40px;
   font-family: Arial;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .home {
@@ -26,10 +26,11 @@ body {
 .card.bg-dark{
   float: left;
   margin: auto;
-  
+  text-align: left;
 }
-
-
+.btn{
+  cursor: pointer;
+}
 
 
 
