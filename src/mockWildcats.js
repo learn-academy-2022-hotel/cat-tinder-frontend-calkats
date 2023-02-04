@@ -1,4 +1,4 @@
-const wildcats = [
+const mockWildcats = [
     {
         id: 1,
         name: "Clawdia",
@@ -27,4 +27,4 @@ const wildcats = [
           "https://images.unsplash.com/photo-1539242561050-387ee3928095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjV8NDk4ODg0OHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60"
       }
     ]
-    export default wildcats
+    export default mockWildcats
