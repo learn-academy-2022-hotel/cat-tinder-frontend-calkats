@@ -26,7 +26,7 @@ body {
 
 .card.bg-dark{
   float: left;
-  margin: auto;
+  gap: 1rem;
   text-align: left;
 }
 
@@ -43,18 +43,28 @@ body {
   text-align: center;
 }
 
-.nav-links {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 50px;
+    text-decoration: none;
 }
 
 .home-text{
   text-align: center;
 }
 
+.index-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wildcat-show-cards {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
 
