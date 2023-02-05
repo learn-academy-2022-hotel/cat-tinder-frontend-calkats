@@ -6,13 +6,11 @@ body {
   font-family: Arial;
 }
 
-.home {
+.page-name{
   color: white;
-  padding: 40px;
+  font-weight: bolder;
   font-family: Arial;
-  text-align: center;
 }
-
 .notfound {
   background-color: black;
   font-weight: bold;
@@ -23,7 +21,7 @@ body {
 }
 
 .page-title{
-  text-align: left;
+  text-align: center;
 }
 
 .card.bg-dark{
@@ -45,9 +43,18 @@ body {
   text-align: center;
 }
 
-.create-forp{
-  text-align: ;
+.nav-links {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
+.home-text{
+  text-align: center;
+}
 
 

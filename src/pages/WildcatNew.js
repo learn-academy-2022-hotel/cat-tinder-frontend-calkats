@@ -36,7 +36,7 @@ const WildcatNew = ({ createNewWildcat }) => {
           <Input
             id="name"
             name="name"
-            placeholder="with a placeholder"
+            placeholder="What's your name?"
             type="text"
             onChange={handleChange}
           />
@@ -72,7 +72,7 @@ const WildcatNew = ({ createNewWildcat }) => {
           <Input
             id="dislikes"
             name="dislikes"
-            placeholder="What do you not enjoy?"
+            placeholder="What do you dislike?"
             type="text"
             onChange={handleChange}
           />
