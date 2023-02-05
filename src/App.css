@@ -6,13 +6,11 @@ body {
   font-family: Arial;
 }
 
-.home {
+.page-name{
   color: white;
-  padding: 40px;
+  font-weight: bolder;
   font-family: Arial;
-  text-align: center;
 }
-
 .notfound {
   background-color: black;
   font-weight: bold;
@@ -23,12 +21,12 @@ body {
 }
 
 .page-title{
-  text-align: left;
+  text-align: center;
 }
 
 .card.bg-dark{
   float: left;
-  margin: auto;
+  gap: 1rem;
   text-align: left;
 }
 
@@ -45,9 +43,28 @@ body {
   text-align: center;
 }
 
-.create-forp{
-  text-align: ;
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-right: 50px;
+    text-decoration: none;
 }
 
+.home-text{
+  text-align: center;
+}
 
+.index-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wildcat-show-cards {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
 
