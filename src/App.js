@@ -14,7 +14,10 @@ import './App.css';
 const App = () => {
   const [wildcats, setWildcats] = useState(mockWildcats)
   
-  
+  const createNewWildcat= (newWildcatObject) => {
+    console.log("new wildcat obj: ", newWildcatObject)
+
+  }
   return(
     <>
       <Header />
@@ -23,7 +26,7 @@ const App = () => {
         <Route path="/wildcatindex" element={<WildcatIndex wildcats={wildcats} />} />
        <Route path="/wildcatshow/:id" element={<WildcatShow wildcats={wildcats} />} />
         <Route path="/wildcatedit" element={<WildcatEdit />} />
-        <Route path="/wildcatnew" element={<WildcatNew />} />
+        <Route path="/wildcatnew" element={<WildcatNew  createNewWildcat={createNewWildcat}/>} />
        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
