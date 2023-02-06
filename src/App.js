@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import mockWildcats from "./mockWildcats"
+import React, { useEffect, useState } from "react"
+// import mockWildcats from "./mockWildcats"
 import { Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
 import WildcatEdit from "./pages/WildcatEdit"
@@ -12,12 +12,34 @@ import NotFound from "./pages/NotFound"
 import './App.css';
 
 const App = () => {
-  const [wildcats, setWildcats] = useState(mockWildcats)
-  
+
+  const [wildcats, setWildcats] = useState([])
+
+  useEffect(() => { readWildcat() }, [])
+
+  const readWildcat = () => {
+    fetch("http://localhost:3000/wildcats")
+      .then(response => response.json())
+      .then(payload => {
+        setWildcats(payload)
+      })
+      .catch(error => console.log(error))
+  }
+
   const createNewWildcat= (newWildcatObject) => {
     console.log("new wildcat obj: ", newWildcatObject)
-
+    fetch("http://localhost:3000/wildcats", {
+      body:  JSON.stringify(newWildcatObject),
+      headers: {
+        "Content-type": "application/json"
+      },
+      method: "POST"
+    })
+      .then(response => response.json())
+      .then(payload => readWildcat())
+      .catch(errors => console.log("wildcat create errors:", errors))
   }
+
   return(
     <>
       <Header />

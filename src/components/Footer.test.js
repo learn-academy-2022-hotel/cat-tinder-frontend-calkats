@@ -11,7 +11,7 @@ describe("<Footer />", () => {
                 <Footer />
             </BrowserRouter>
         )
-        const footer = screen.getByText(/© created by natally, christian and bora \|\| hotel 2023/i)
+        const footer = screen.getByText(/© created by Team Calkats: natally, christian and bora \|\| hotel 2023/i)
         expect(footer).toBeInTheDocument()
     })
 
